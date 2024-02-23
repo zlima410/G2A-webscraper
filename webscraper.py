@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 import re
+import ezsheets
 
-headers = {'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'}
+""" headers = {'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'}
 
 search_term = input("What game do you want to search for? ")
 console_type = input("What console would you like the game to be on? (Steam, XBOX, PSN) ")
@@ -35,4 +36,7 @@ else:
     price = section.find(class_="sc-iqAclL sc-crzoAE dJFpVb eqnGHx sc-bqGGPW gjCrxq")
     display_price = price.text.replace(" ", "")
 
-    print(display_title, display_price, sep=" => ")
+    print(display_title, display_price, sep=" => ") """
+
+ss = ezsheets.Spreadsheet('14Ctq_SMhvEwsTJb7FP-sSjgZr5Cwck5MImXL9Lty3js')
+print(ss.title)
