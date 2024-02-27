@@ -39,4 +39,3 @@ else:
     print(display_title, display_price, sep=" => ") """
 
 ss = ezsheets.Spreadsheet('14Ctq_SMhvEwsTJb7FP-sSjgZr5Cwck5MImXL9Lty3js')
-print(ss.title)
